@@ -1,0 +1,14 @@
+{
+  "name": "parcel-async-bug",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "pacakges/*"
+  ],
+  "scripts": {
+    "build": "yarn workspace hello-lib run build && yarn workspace greeting-lib run build",
+    "start": "yarn build && yarn workspace client run start"
+  }
+}
